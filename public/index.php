@@ -2,6 +2,8 @@
 define('APPLICATION_PATH', getcwd().'/../app/');
 
 require APPLICATION_PATH.'../vendor/autoload.php';
+new \App\Core\Config();
+
 
 // /users/test
 $routes = explode('/', $_SERVER['REQUEST_URI']);
