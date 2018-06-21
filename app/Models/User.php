@@ -21,4 +21,10 @@ class User
     {
         return $this->users[$id];
     }
+
+
+    public function store($name, $user_id, $info)
+    {
+        //
+    }
 }

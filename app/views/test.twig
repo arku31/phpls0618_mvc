@@ -1,4 +1,13 @@
+{% include "header.twig" %}
+
+{% block "main" %}
+MAINCONTENT
+{% endblock %}
+
 twig: {{ test }}
 {% if isTest %}
 TEST EST
+    {{ block('main') }}
 {% endif %}
+
+{% include "footer.twig" %}

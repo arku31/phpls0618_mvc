@@ -1,6 +1,6 @@
 404 not found
 <br>
-<?php if (file_exists('../debug')) : ?>
+<?php if (file_exists(__DIR__.'../../debug')) : ?>
 Error: <br><pre>
 <?php
 echo 'line:'. $e->getLine()."<br>";

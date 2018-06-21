@@ -1,8 +1,9 @@
 <?php
 define('APPLICATION_PATH', getcwd().'/../app/');
+define('PUBLIC_PATH', getcwd());
 
 require APPLICATION_PATH.'../vendor/autoload.php';
-new \App\Core\Config();
+new \App\Core\Config(); //Bootstrap.php //Core //Loader
 
 
 // /users/test

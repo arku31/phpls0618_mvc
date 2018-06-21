@@ -4,6 +4,7 @@ namespace App;
 
 use App\Models\User;
 use Carbon\Carbon;
+use GUMP;
 use Swift_Mailer;
 use Swift_Message;
 use Swift_SmtpTransport;
@@ -95,7 +96,7 @@ class Courses extends MainController
     public function twig()
     {
         $this->view->twigLoad('test', ['test' => 'asd', 'isTest' => true]);
-        $this->view->render('test', ['test' => 'asd', 'isTest' => true]);
+//        $this->view->render('test', ['test' => 'asd', 'isTest' => true]);
     }
 
     public function fs()
@@ -116,4 +117,5 @@ class Courses extends MainController
     {
         echo getenv('DB_HOST').':'.getenv('DB_PASSWORD');
     }
+
 }
